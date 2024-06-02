@@ -1,2 +1,3 @@
-for i in range(1,101):
-	print(*[n for n in range(1,i+1) if i%n==0])
+r=range
+for i in r(1,101):
+	print(*[n for n in r(1,i+1)if i%n==0])
