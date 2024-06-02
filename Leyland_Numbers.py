@@ -1,2 +1,3 @@
-for v in sorted({pow(x,y)+pow(y,x) for x in range(1,37)for y in range(2,x+1)})[:107]:
+r,p=range,pow
+for v in sorted({p(x,y)+p(y,x)for x in r(1,37)for y in r(2,x+1)})[:107]:
 	print(v)
