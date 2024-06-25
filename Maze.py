@@ -25,5 +25,5 @@ while q:
 	c,o=q.pop(0)
 	if c==e:b(o);break
 	for i,j in((0,1),(0,-1),(-1,0),(1,0)):
-		z,f=c[0]+i,c[1]+j;a=(z,f)
-		if z>-1and z<m and f>-1and f<M and a not in w and a not in v:q+=[((a,{*o,(z,f)}))];v.add(a)
+		a=(c[0]+i,c[1]+j)
+		if a not in w and a not in v:q+=[((a,{*o,a}))];v.add(a)
