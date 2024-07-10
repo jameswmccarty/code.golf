@@ -1,2 +1,2 @@
-f=lambda x:x if x<=1else f(x-1)+f(x-2)
-for i in range(31):print(f(i))
+f=[1,0]
+while len(f)<33:f=[f[0]+f[1]]+f;print(f[2])
