@@ -1,10 +1,7 @@
 t={0:1}
-def k():
- e,o=1,3
- while 1:yield e;e+=1;yield o;o+=2
 def q():
- n=1;yield n
- for x in k():n+=x;yield n
+ n=e=1;o=3
+ while 1:yield n;n+=e;e+=1;yield n;n+=o;o+=2
 def p(n):
  if n in t:return t[n]
  if n<0:return 0
