@@ -1,10 +1,10 @@
 import sys
-x='prnbqk'
+x='PRNBQK'
 z=print
 for a in sys.argv[1:]:
  for c in a.split()[0]:
-  b=c.lower()
-  if b in x:z({1:'♟♜♞♝♛♚',0:'♙♖♘♗♕♔'}[c in x][x.index(b)],end='')
-  if c.isdigit():z(int(c)*' ',end='')
-  if c=='/':z()
+  b=c.upper()
+  if b in x:z(['♟♜♞♝♛♚','♙♖♘♗♕♔'][c in x][x.index(b)],end='')
+  elif c=='/':z()
+  else:z(int(c)*' ',end='')
  z('\n')
