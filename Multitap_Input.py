@@ -6,5 +6,5 @@ def e(x,c,o,l):
   else:
    if l!=' ':o+=chr(k[ord(l)-48]+c)
    c=0;l=u
- o+=chr(k[ord(l)-48]+c);return o
-for a in sys.argv[1:]:print(e(a,0,'',' '))
+ return o
+for a in sys.argv[1:]:print(e(a+' ',0,'',' '))
